@@ -56,4 +56,36 @@ public class Ordenacion {
             }
         }
     }
+
+    // Seleccion
+    public void seleccion() {
+        int pos, temp;
+        for (int i = 0; i < size - 1; i++) {
+            pos = i;
+            for (int j = i + 1; j < size; j++) {
+                if (array[j] < array[pos]) {
+                    pos = j;
+                }
+            }
+            if (pos != i) {
+                temp = array[i];
+                array[i] = array[pos];
+                array[pos] = temp;
+            }
+        }
+    }
+
+    // insercion
+    public void insercion() {
+        int temp, pos;
+        for (int i = 1; i < size; i++) {
+            temp = array[i];
+            pos = i;
+            while (pos > 0 && array[pos - 1] > temp) {
+                array[pos] = array[pos - 1];
+                pos--;
+            }
+            array[pos] = temp;
+        }
+    }
 }

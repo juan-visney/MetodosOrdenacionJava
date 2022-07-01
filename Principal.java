@@ -4,7 +4,9 @@ public class Principal {
         array.create();
         System.out.println(array.toString());
         // array.burbuja();
-        array.intercambio();
+        // array.intercambio();
+        // array.seleccion();
+        array.insercion();
         System.out.println(array.toString());
     }
 }
