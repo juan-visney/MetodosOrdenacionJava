@@ -1,5 +1,7 @@
 public class Principal {
     public static void main(String args[]) {
-        System.out.println("Hello world");
+        Ordenacion array = new Ordenacion();
+        array.create();
+        System.out.println(array.toString());
     }
 }
