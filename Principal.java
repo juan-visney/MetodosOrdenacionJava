@@ -3,5 +3,8 @@ public class Principal {
         Ordenacion array = new Ordenacion();
         array.create();
         System.out.println(array.toString());
+        // array.burbuja();
+        array.intercambio();
+        System.out.println(array.toString());
     }
 }
