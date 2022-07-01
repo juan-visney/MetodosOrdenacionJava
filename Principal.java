@@ -6,7 +6,8 @@ public class Principal {
         // array.burbuja();
         // array.intercambio();
         // array.seleccion();
-        array.insercion();
+        // array.insercion();
+        array.quickSort();
         System.out.println(array.toString());
     }
 }
